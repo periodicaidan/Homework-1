@@ -37,26 +37,18 @@ header nav {
     font-size: 20px;
 }
 
-/* Remove the tick mark that normally gets placed before items of a ul */
 header nav ul {
     list-style-type: none;
 }
 
-/* Styles for each item in the nav menu */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/* Link styles */
-a {
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
-}
-
-/* Paragraph sizes */
-p {
-    font-size: 16px;
 }
 
 /* Big banner image */
@@ -69,6 +61,11 @@ p {
     background-position: center;
 }
 
+/* Paragraph font sizes for content and sidebar */
+p {
+    font-size: 16px;
+}
+
 /* Styles for the main page content */
 .content {
     width: 75%;
@@ -76,6 +73,7 @@ p {
     margin-left: 20px;
 }
 
+/* Feature "cards" */
 .content article {
     margin-bottom: 20px;
     padding: 50px;
@@ -85,10 +83,16 @@ p {
     color: #ffffff;
 }
 
+.content article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 .content article img {
     max-height: 200px;
 }
 
+/* Images in each "card" can be floated left or right */
 .content article img.float-left {
     float: left;
     margin-right: 25px;
@@ -97,11 +101,6 @@ p {
 .content article img.float-right {
     float: right;
     margin-right: 25px;
-}
-
-.content article h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 /* Styles for the sidebar content */
@@ -116,17 +115,17 @@ p {
     background-color: #2589bd;
 }
 
-.benefits>div {
+.benefits .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefits h3 {
+.benefits .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefits img {
+.benefits .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
